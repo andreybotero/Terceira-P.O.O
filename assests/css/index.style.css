@@ -1,54 +1,62 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset CSS */
+
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f0f0f0;
+}
+
+h1{
+    text-align: center;
+    color: #d30000;
+}
+main{
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-  }
-  
-  h1 {
-    text-align: center;
-    color: #d30000;
-  }
-  
-  #postForm {
+}
+
+#postForm {
     max-width: 500px;
     width: 100%;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #ffffff;
-  }
-  
-  label,
-  input,
-  textarea {
+
+}
+
+label, input, textarea {
     display: block;
     margin-bottom: 10px;
     width: 100%;
     box-sizing: border-box;
-  }
-  
-  textarea {
-    resize: vertical;
-  }
-  
-  button {
+    max-width: 500px;
+}
+
+button{
     background-color: #d30000;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
+    padding: 0.35rem;
+    border-radius: 8px;
     width: 100%;
-  }
-  
-  button:hover {
-    background-color: #a00000;
-  }
-  
-  #exibicao {
+}
+
+button:hover {
+ background-color: #a00000;
+}
+
+textarea{
+    resize: none;
+}
+
+#list{
     max-width: 500px;
     width: 100%;
     margin-top: 20px;
@@ -56,29 +64,34 @@ body {
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #ffffff;
-  }
-  
-  .post {
+}
+
+.post {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 10px;
     margin-bottom: 10px;
-  }
-  
-  .post h2 {
+}
+
+.post h2{
     color: #d30000;
     margin-bottom: 5px;
-  }
-  
-  .post button {
+}
+
+.post button {
     background-color: #d30000;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     padding: 6px 10px;
     cursor: pointer;
-  }
-  
-  .post button:hover {
+    margin-bottom: 5px;
+}
+
+.post button:hover{
     background-color: #a00000;
-  }
+}
+
+.hidden {
+    display: none;
+}
