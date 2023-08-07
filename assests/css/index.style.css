@@ -14,14 +14,16 @@ h1{
     color: #000;
 }
 main{
-    height: 100vh;
+    height: 60vh;
     display: flex;
-    flex-direction: column;
-    justify-content: right;
-    align-items: right;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    
 }
 
 #postForm {
+    margin-left: 10%;
     max-width: 500px;
     width: 100%;
     padding: 40px;
@@ -40,13 +42,28 @@ label, input, textarea {
     max-width: 500px;
 }
 
+#img {
+    display: flex;
+    flex-direction:row ;
+    margin: 10px;
+}
+
+img {
+    height: 75px;
+    width: 75px;
+    margin-left: 10px;
+    border-radius: 13px;
+}
+
 button{
-    background-color: rgb(201, 194, 194);
+    background-color: rgb(121, 113, 113);
     color: #ffffff;
     cursor: pointer;
     padding: 0.35rem;
-    border-radius: 8px;
+    border-radius: 8px  ;
     width: 100%;
+    border: none;
+    margin-top: 1rem;
 }
 
 button:hover {
