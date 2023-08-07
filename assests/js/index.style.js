@@ -43,7 +43,7 @@ function storePost(firstName, secondName, age, eyesColors) {
 }
 
 function showPosts() {
-    document.getElementById("exhibition").classexhibition.remove("hidden");
+    document.getElementById("list").classlist.remove("hidden");
     let showContent = "";
 
     posts.forEach((post, index) => {
@@ -60,7 +60,7 @@ function showPosts() {
         </div>
         `;
     })
-    document.getElementById("exhibition").innerHTML = showContent;
+    document.getElementById("list").innerHTML = showContent;
 }
 
 function cleanFields() {
@@ -85,7 +85,7 @@ function removePost(index) {
 
     showPosts();
 if (i == 1) {
-    document.getElementById("exhibition").classexhibition.add("hidden");
+    document.getElementById("list").classlist.add("hidden");
 }
 i = i - 1;
         
