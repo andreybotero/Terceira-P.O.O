@@ -8,38 +8,46 @@ function savePost() {
     const secondName = document.getElementById("secondName").value;
     const age = document.getElementById("age").value;
     const eyesColors = document.getElementById("eyesColors").value;
-    const date = document.getElementById("date").value;
+    
 
     if (indexPost == -1) {
-        if (firstName && secondName && age && eyesColors && date) {
-        storePost(firstName, secondName, age, eyesColors, date);
+        if (firstName && secondName && age && eyesColors ) {
+        storePost(firstName, secondName, age, eyesColors);
         cleanFields();
     }
 }else {
-        if (firstName && secondName && age && eyesColors && date) {
+        if (firstName && secondName && age && eyesColors ) {
             posts[indexPost] = {
                 firstName,
                 secondName,
                 age,
-                eyesColors,
-                date
+                eyesColors
+                
             }
     }cleanFields();
 }
 
+if (age > 99) {
+    alert("idade invalida");
+    return
+}
+
+showPosts();
+      
+        
+
     
-    showPosts();
+    
     indexPost = -1;
 
 }
 
-function storePost(firstName, secondName, age, eyesColors, date) {
+function storePost(firstName, secondName, age, eyesColors, ) {
     const post = {
         firstName,
         secondName,
         age,
-        eyesColors,
-        date
+        eyesColors
     };
 
     posts.push(post)
@@ -55,7 +63,6 @@ function showPosts() {
         <p><strong>Nome: </strong>${post.firstName} ${post.secondName}</p>
         <p><strong>Idade: </strong>${post.age}</p>
         <p><strong>Cor dos olhos: </strong>${post.eyesColors}</p>
-        <p><strong>Data de nascimento: </strong>${post.date}</p>
 
         <button onclick="editPost(${index})">Editar</button>
         <button onclick="removePost(${index})">Remover</button>
@@ -71,7 +78,7 @@ function cleanFields() {
     document.getElementById("eyesColors").value = "";
     document.getElementById("age").value = "";
     document.getElementById("secondName").value = "";
-    document.getElementById("date").value = "";
+
 }
 
 function editPost(index) {
@@ -82,7 +89,7 @@ function editPost(index) {
     document.getElementById("secondName").value = post.secondName;
     document.getElementById("age").value = post.age;
     document.getElementById("eyesColors").value = post.eyesColors;
-    document.getElementById("date").value = post.date;
+
 }
 
 function removePost(index) {
