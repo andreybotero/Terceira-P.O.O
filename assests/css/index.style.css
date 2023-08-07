@@ -69,7 +69,7 @@ button {
 }
 
 button:hover {
-    background-color: rgb(201, 194, 194);
+    background-color: #757575d7;
 }
 
 textarea {
@@ -99,7 +99,8 @@ textarea {
 }
 
 .post button {
-    background-color: #f0f0f0d7;
+    background-color: rgb(121, 113, 113);
+
     color: #ffffff;
     border: none;
     border-radius: 4px;
