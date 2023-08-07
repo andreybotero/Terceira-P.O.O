@@ -4,23 +4,23 @@ let i = 0;
 
 function savePost() {
     i++
-    const title = document.getElementById("title").value;
-    const resume = document.getElementById("resume").value;
-    const publisher = document.getElementById("publisher").value;
-    const date = document.getElementById("date").value;
+    const firstName = document.getElementById("firstName").value;
+    const secondName = document.getElementById("secondName").value;
+    const age = document.getElementById("age").value;
+    const eyesColors = document.getElementById("eyesColors").value;
 
     if (indexPost == -1) {
-        if (title && resume && publisher && date) {
-        storePost(title, resume, publisher, date);
+        if (firstName && secondName && age && eyesColors) {
+        storePost(firstName, secondName, age, eyesColors);
         cleanFields();
     }
 }else {
-        if (title && resume && publisher && date) {
+        if (firstName && secondName && age && eyesColors) {
             posts[indexPost] = {
-                title,
-                resume,
-                publisher,
-                date
+                firstName,
+                secondName,
+                age,
+                eyesColors
             }
     }cleanFields();
 }
@@ -31,28 +31,28 @@ function savePost() {
 
 }
 
-function storePost(title, resume, publisher, date) {
+function storePost(firstName, secondName, age, eyesColors) {
     const post = {
-        title,
-        resume,
-        publisher,
-        date
+        firstName,
+        secondName,
+        age,
+        eyesColors
     };
 
     posts.push(post)
 }
 
 function showPosts() {
-    document.getElementById("list").classList.remove("hidden");
+    document.getElementById("exhibition").classexhibition.remove("hidden");
     let showContent = "";
 
     posts.forEach((post, index) => {
         showContent += `
         <div class="post">
-        <h2>${post.title}</h2>
-        <p><strong>Resumo: </strong>${post.resume}</p>
-        <p><strong>Autor: </strong>${post.publisher}</p>
-        <p><strong>Data de publicação: </strong>${post.date}</p>
+        <h2>${post.firstName}</h2>
+        <p><strong>Resumo: </strong>${post.secondName}</p>
+        <p><strong>Autor: </strong>${post.age}</p>
+        <p><strong>Data de publicação: </strong>${post.eyesColors}</p>
 
         <button onclick="editPost(${index})">Editar</button>
         <button onclick="removePost(${index})">Remover</button>
@@ -60,24 +60,24 @@ function showPosts() {
         </div>
         `;
     })
-    document.getElementById("list").innerHTML = showContent;
+    document.getElementById("exhibition").innerHTML = showContent;
 }
 
 function cleanFields() {
-    document.getElementById("title").value = "";
-    document.getElementById("date").value = "";
-    document.getElementById("publisher").value = "";
-    document.getElementById("resume").value = "";
+    document.getElementById("firstName").value = "";
+    document.getElementById("eyesColors").value = "";
+    document.getElementById("age").value = "";
+    document.getElementById("secondName").value = "";
 }
 
 function editPost(index) {
     indexPost = index;
     const post = posts[index];
 
-    document.getElementById("title").value = post.title
-    document.getElementById("resume").value = post.resume
-    document.getElementById("publisher").value = post.publisher
-    document.getElementById("date").value = post.date
+    document.getElementById("firstName").value = post.firstName
+    document.getElementById("secondName").value = post.secondName
+    document.getElementById("age").value = post.age
+    document.getElementById("eyesColors").value = post.eyesColors
 }
 
 function removePost(index) {
@@ -85,7 +85,7 @@ function removePost(index) {
 
     showPosts();
 if (i == 1) {
-    document.getElementById("list").classList.add("hidden");
+    document.getElementById("exhibition").classexhibition.add("hidden");
 }
 i = i - 1;
         
