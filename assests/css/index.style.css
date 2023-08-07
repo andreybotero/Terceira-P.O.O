@@ -16,7 +16,7 @@ h1 {
 }
 
 main {
-    height: 60vh;
+    height: 65vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
