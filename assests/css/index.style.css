@@ -6,12 +6,12 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #f0f0f0;
+    background-color: #f0f0f0d7;
 }
 
 h1{
     text-align: center;
-    color: #d30000;
+    color: #000;
 }
 main{
     height: 100vh;
@@ -24,10 +24,11 @@ main{
 #postForm {
     max-width: 500px;
     width: 100%;
-    padding: 20px;
+    padding: 40px;
     border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #ffffff;
+    border-radius: 10px;
+    background: rgb(230,230,235);
+    background: linear-gradient(90deg, rgba(230,230,235,1) 0%, rgba(173,173,179,1) 35%, rgba(7,7,7,1) 100%);
 
 }
 
@@ -40,7 +41,7 @@ label, input, textarea {
 }
 
 button{
-    background-color: #d30000;
+    background-color: rgb(201, 194, 194);
     color: #ffffff;
     cursor: pointer;
     padding: 0.35rem;
@@ -49,7 +50,7 @@ button{
 }
 
 button:hover {
- background-color: #a00000;
+ background-color: rgb(201, 194, 194);
 }
 
 textarea{
