@@ -77,13 +77,12 @@ textarea {
 }
 
 #list {
-    height: 60vh;
     max-width: 500px;
     width: 100%;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 8px;
-    background-color: #ffffff;
+    background-color: transparent;
 }
 
 .post {
@@ -91,6 +90,7 @@ textarea {
     border-radius: 8px;
     padding: 10px;
     margin-bottom: 10px;
+    background: linear-gradient(90deg, rgba(230, 230, 235, 1) 0%, rgba(173, 173, 179, 1) 35%, rgba(7, 7, 7, 1) 100%);
 }
 
 .post h2 {
@@ -100,7 +100,6 @@ textarea {
 
 .post button {
     background-color: #f0f0f0d7;
-
     color: #ffffff;
     border: none;
     border-radius: 4px;
