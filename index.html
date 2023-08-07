@@ -10,29 +10,24 @@
 </head>
 
 <body>
-    <main>
-        <div id="conteiner">
+    <h1>Próximos Posts</h1>
+    <div id="postForm">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required />
 
-            <div>
-                <label for="name">Coloque seu nome:</label>
-                <input type="text" name="name" id="firstName">
-            </div>
-            <div>
-                <label for="name">Coloque seu sobrenome:</label>
-                <input type="text" name="name" id="lastName">
-            </div>
-            <div>
-                <label for="name">Coloque sua idade: </label>
-                <input type="text" name="name" id="age">
-            </div>
-            <div>
-                <label for="name">Coloque a cor dos seus olhos: </label>
-                <input type="text" name="name" id="eyesColor">
-            </div>
+        <label for="resumo">Resumo:</label>
+        <textarea id="resumo" name="resumo" rows="4" required></textarea>
 
+        <label for="autor">Autor:</label>
+        <input type="text" id="autor" name="autor" required />
 
-        </div>
-    </main>
+        <label for="data_publicacao">Data de Publicação:</label>
+        <input type="date" id="data_publicacao" name="data_publicacao" required />
+
+        <button onclick="savePosts()">Cadastrar</button>
+    </div>
+
+    <div id="exibicao"></div>
 </body>
 
 </html>
