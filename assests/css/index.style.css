@@ -16,7 +16,7 @@ h1 {
 }
 
 main {
-    height: 60vh;
+    height: 65vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -69,7 +69,7 @@ button {
 }
 
 button:hover {
-    background-color: rgb(201, 194, 194);
+    background-color: #757575d7;
 }
 
 textarea {
@@ -77,13 +77,12 @@ textarea {
 }
 
 #list {
-    height: 60vh;
     max-width: 500px;
     width: 100%;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 8px;
-    background-color: #ffffff;
+    background-color: transparent;
 }
 
 .post {
@@ -91,6 +90,7 @@ textarea {
     border-radius: 8px;
     padding: 10px;
     margin-bottom: 10px;
+    background: linear-gradient(90deg, rgba(230, 230, 235, 1) 0%, rgba(173, 173, 179, 1) 35%, rgba(7, 7, 7, 1) 100%);
 }
 
 .post h2 {
@@ -99,7 +99,7 @@ textarea {
 }
 
 .post button {
-    background-color: #f0f0f0d7;
+    background-color: rgb(121, 113, 113);
 
     color: #ffffff;
     border: none;
