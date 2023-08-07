@@ -94,12 +94,13 @@ textarea {
 }
 
 .post h2 {
-    color: #d30000;
+    color: black;
     margin-bottom: 5px;
 }
 
 .post button {
-    background-color: #d30000;
+    background-color: #f0f0f0d7;
+
     color: #ffffff;
     border: none;
     border-radius: 4px;
@@ -109,7 +110,7 @@ textarea {
 }
 
 .post button:hover {
-    background-color: #a00000;
+    background-color: #757575d7;
 }
 
 .hidden {
